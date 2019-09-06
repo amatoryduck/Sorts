@@ -1,8 +1,4 @@
-def max(x, y):
-	if x > y:
-		return x
-	else:
-		return y
+import random
 
 def bubbleSort(lst):
 	for i in reversed(range(1, len(lst))):
@@ -13,5 +9,9 @@ def bubbleSort(lst):
 	return lst
 
 if __name__=="__main__":
-	l = [4, 2,6 , 7, 1, -4, 1, -6, 1, 7, 1,4 , -7]
-	print(bubbleSort(l))
+	l = list()
+	length = int(raw_input("ENTER # of NUMS: "))
+	for i in range(0, length):
+		l.append(random.randint(-100, 100))
+	print("ORIGINAL LIST: {}".format(l))
+	print("SORTED LIST: {}".format(bubbleSort(l)))
