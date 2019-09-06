@@ -16,8 +16,6 @@ def quickSort(lst, l, r):
 		pivot = partition(lst, l, r)
 		quickSort(lst, l, pivot - 1)
 		quickSort(lst, pivot + 1, r)
-	else:
-		return lst		
 
 if __name__=="__main__":
 	l = list()
