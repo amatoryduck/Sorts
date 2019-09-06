@@ -7,7 +7,6 @@ def partition(lst, l, r):
 		if lst[j] <= pivot:
 			i = i + 1
 			lst[i], lst[j] = lst[j], lst[i]
-		
 	lst[i + 1], lst[r] = lst[r], lst[i + 1]
 	return (i + 1)
 
