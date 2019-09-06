@@ -1,11 +1,5 @@
 import random
 
-def max(x, y):
-	if x > y:
-		return x
-	else:
-		return y
-
 def selectionSort(lst):
 	for i in reversed(range(1, len(lst))):
 		k = 0
